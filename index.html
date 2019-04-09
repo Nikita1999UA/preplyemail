@@ -1,0 +1,537 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <style> 
+        .block  {
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        .title{
+            color: #3db3bd;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .description{
+            color: #666666;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tips{
+            color: #666666;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+        }
+
+        .item {
+            height: 30px; 
+            vertical-align: top;
+        }
+
+        .item__img {
+            float: left;
+            margin-left: 15%;
+        }
+        .item__text {
+            width: 220px;
+            background-color: #e8eaed;
+            margin: 0;
+            text-align: center;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            border-radius: 25px;
+            display: block;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .item__text--two{
+            width: 300px;
+            background-color: #e8eaed;
+            margin: 0;
+            margin-left: 75px;
+            text-align: center;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            border-radius: 25px;
+            display: block;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .item__text--three{
+            width: 240px;
+            background-color: #e8eaed;
+            margin: 0;
+            margin-left: 15px;
+            text-align: center;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            border-radius: 25px;
+            display: block;
+            text-decoration: none;
+            color: #000000;
+        }
+        .suggested__img{
+            float: left;
+        }
+
+        .suggested__title{
+            margin-left: 25px;
+            float: left;
+            color: #666666;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .suggested__description{
+            float: left;
+            width: 42%;
+            margin-left: 25px;
+            margin-top: 15px;
+            color: #666666;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            line-height: 35px;
+            padding: 0;
+        }
+
+        .suggested__link{
+            text-decoration: none;
+            color: #3db3bd;
+        }
+
+        .suggested__img--two{
+            float: right;
+        }
+
+        .suggested__title--two{
+            width: 47%;
+            float: right;
+            color: #666666;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .suggested__description--two{
+            float: right;
+            width: 42%;
+            margin-right: 25px;
+            margin-top: 15px;
+            color: #666666;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            line-height: 35px;
+            padding: 0;
+        }
+
+        .suggested__link{
+            text-decoration: none;
+            color: #3db3bd;
+        }
+
+        .search__btn{
+            width: 160px;
+            background-color: #e8eaed;
+            margin: 0;
+            margin-left: 15px;
+            text-align: center;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            border-radius: 25px;
+            border: none;
+            display: inline-block;
+            text-decoration: none;
+            color: #000000
+        }
+        .help{
+            padding-left: 30px;
+            float: left;
+            width: 250px;
+            height: 60px;
+        }
+        .help__img{
+            float: left;
+            padding: 10px 0px 10px 0px;
+        }
+
+        .help__text{
+            margin-left: 15px;
+            float: left;
+            color: #3db3bd;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+        }
+
+        .helpful__text{
+            color: #999999;
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .smile__img--two{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+
+        .social {
+            max-width: 350px;
+            margin: 0 auto;
+            display: inline-block;
+        }
+        
+
+        .social__link{
+            padding: 15px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            display: block;
+            width: 40px;
+            float: left;
+        }
+
+        .social__link i {
+            color: #999999;
+            font-size: 25px;
+        }
+
+        .social__link--two i {
+            color: #999999;
+            font-size: 25px;
+        }
+
+        .social__link--two{
+            margin-left: 15px;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            display: block;
+            width: 40px;
+            float: left;
+        }
+
+        .social__link--three i {
+            color: #999999;
+            font-size: 25px;
+        }
+
+        .social__link--three{
+            margin-left: 15px;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            display: block;
+            width: 40px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .footer__text{
+            text-align: center;
+            font-size: 13px;
+            margin-left: 15px;
+            margin-right: 15px;
+            color: #999999;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="1" bordercolor="#eaeaea" class="wrapper" style="width:100%;max-width:600px;margin:0 auto;">
+        <tbody>
+            <tr>
+                <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                    <tbody>
+                        <tr>
+                            <td height="20px" width="100%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="logo" align="center">
+                                <img  height="60" src="https://picua.org/images/2019/04/09/ac03bfc5cd54360ab0ab4162f4a8ac2a.png" alt="logo"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20px" width="100%">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                    <tbody>
+                        <tr>
+                            <td class="logo" align="center" width="100%">
+                                <img width="600px" src="https://picua.org/images/2019/04/09/3cff6f54feeabd18924b0f6896d96b68.jpg" alt="main"
+                                />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#fafafa">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table height="auto" style="width:550px;margin-left: 25px; margin-top: 15px;" cellpadding="0" cellspacing="0" border="0" class="block" bgcolor="#ffffff">
+                                    <tbody>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="auto" align="center" width="100%">
+                                                <p class="title">Welcome to Preply,</p>
+                                                <p class="title">{first name}</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="auto" align="center" width="100%">
+                                                <p class="description">We are happy you started your journey of learning on Preply.</p>
+                                                <p class="description">Let us help you with the first step - finding the perfect tutor</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="60px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="auto" align="center" width="100%">
+                                                <p class="tips">3 easy tips to get started</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="auto"  align="center" class="item" valign="center" align="center">
+                                                <img valign="center" align="center" class="item__img" src="https://picua.org/images/2019/04/09/0b078ef6097a7d30217e8c6a93503888.png" alt="goal" width="50px" height="50px">
+                                                <a href="#" class="item__text"  valign="center" align="center">Update your goals</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="auto"  align="center" class="item" valign="center" align="center">
+                                                <img valign="center" align="center" class="item__img" src="https://picua.org/images/2019/04/09/e40f09fc2e33e98f66f1c7b8b7179d06.png" alt="goal" width="50px" height="50px">
+                                                <a href="#" class="item__text--two"  valign="center" align="center">Add filters in your search</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="auto"  align="center" class="item" valign="center" align="center">
+                                                <img valign="center" align="center" class="item__img" src="https://picua.org/images/2019/04/09/67b3aa85fd49574b6d99125764ff7d1f.png" alt="goal" width="50px" height="50px">
+                                                <a href="#" class="item__text--three"  valign="center" align="center">Watch how-to videos</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="60px" width="100%">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table height="auto" style="width:550px;margin-left: 25px;" cellpadding="0" cellspacing="0" border="0" class="block" bgcolor="#ffffff">
+                                    <tbody>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="auto" align="center" width="100%">
+                                                <p class="title">Suggested tutors for you</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="suggested__img" src="https://picua.org/images/2019/04/09/b4e0194a232960aea4975b8b9045a5f1.jpg" alt="man" width="50%">
+                                                <p width="100%" class="suggested__title"> {tutor_firstname}</p>
+                                                <p class="suggested__description">Hi! I`m Daniel and I`m a certified English teacher and native speaker. I teach students of all ages, from kids to... <a href="" class="suggested__link" >View profile »</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="suggested__img--two" src="https://picua.org/images/2019/04/09/b4e0194a232960aea4975b8b9045a5f1.jpg" alt="man" width="50%">
+                                                <p width="100%" class="suggested__title--two"> {tutor_firstname}</p>
+                                                <p class="suggested__description--two">My name is Alex and I have been teaching English for 7 years now. I specialize in Business English... <a href="" class="suggested__link" >View profile »</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table height="auto" style="width:550px;margin-left: 25px;" cellpadding="0" cellspacing="0" border="0" class="block" bgcolor="#ffffff">
+                                    <tbody>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="auto" align="center" width="100%">
+                                                <p class="title">Start your first trial lesson</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img width="100%" src="https://picua.org/images/2019/04/09/ccb735ef0cbd223c60b8c9065c70e8f6.jpg" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="auto" align="center" width="100%">
+                                                <p class="description">Search for your preffered tutor, find a timeslot that fits your schedule and click on the "Book Lesson" button. It`s as easy as that</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30px" width="100%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <a href="#" class="search__btn">Search now</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="60px" width="100%">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            <tr>
+                        <td>
+                    </tbody>
+                </table>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                    <tbody>
+                        <tr>
+                            <td height="5px" width="100%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="help" valign="center" align="center">
+                                <a href="#">
+                                    <img class="help__img" src="https://picua.org/images/2019/04/09/cec48709f2e22d0d88add0da31c1cf08.png" alt="" width="40px" height="40px">
+                                    <p class="help__text"> Visit the Help Center</p>
+                                </a>
+                            </td>
+                            <td class="help" valign="center" align="center">
+                                <a href="">
+                                    <img class="help__img" src="https://picua.org/images/2019/04/09/b0733f1264264a6724f1cf15479b2c3c.png" alt="" width="40px" height="40px">
+                                    <p class="help__text">Need help? Contact us</p>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" align="center" class="helpful">
+                                <p class="helpful__text">Was this email helpful?</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" align="center" class="smile">
+                                <img class="smile__img" src="https://image.flaticon.com/icons/svg/42/42829.svg" alt="" width="50px" height="50px">
+                                <img class="smile__img--two" src="https://image.flaticon.com/icons/svg/42/42891.svg" alt="" width="50px" height="50px">
+                                <img class="smile__img" src="https://image.flaticon.com/icons/svg/42/42862.svg" alt="" width="50px" height="50px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30px" width="100%">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#fafafa">
+                    <tbody>
+                        <tr>
+                            <td height="30px" width="100%">
+                            </td>
+                        </tr>
+                        <tr width="100%" align="center">
+                            <td align="center" class="social" width="100%">
+                                <a href="https://twitter.com/preplycom" class="social__link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/preplycom/" class="social__link--two">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/preplycompany/" class="social__link--three">
+                                   <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.youtube.com/user/preplysite/featured" class="social__link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30px" width="100%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="footer">
+                                <p class="footer__text">You received this mail because your registered on Preply.com with the email address placeholder@placeholder.com. If you opt-out from receiving future emails, you will only receive imoprtant service announcements going forward, and will miss out on the helpful emails described above. You can manage your emails preferences in your Account preferences.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="60px" width="100%">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
