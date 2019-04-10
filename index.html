@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
 <body>
-    <style> 
-        .block  {
-            border-radius: 25px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    <style>
+
+        .block {
+            background-image: url("https://picua.org/images/2019/04/09/4ebb0713a50f7e28db4712366ad849fb.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
             margin-bottom: 30px;
         }
         .title{
@@ -29,6 +29,8 @@
             font-size: 20px;
             padding: 0;
             margin: 0;
+            padding-left: 30px;
+            padding-right: 30px;
         }
 
         .tips{
@@ -97,25 +99,28 @@
         }
         .suggested__img{
             float: left;
+            display: block;
+            width: 45%;
+            margin-left: 25px;
         }
 
         .suggested__title{
-            margin-left: 25px;
-            float: left;
+            float: right;
             color: #666666;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 19px;
             font-weight: bold;
+            width: 46%;
         }
 
         .suggested__description{
             float: left;
-            width: 42%;
-            margin-left: 25px;
+            width: 36%;
+            margin-left: 30px;
             margin-top: 15px;
             color: #666666;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 19px;
+            font-size: 18px;
             line-height: 35px;
             padding: 0;
         }
@@ -127,10 +132,13 @@
 
         .suggested__img--two{
             float: right;
+            display: block;
+            width: 45%;
+            margin-right: 25px;
         }
 
         .suggested__title--two{
-            width: 47%;
+            width: 40%;
             float: right;
             color: #666666;
             font-family: Arial, Helvetica, sans-serif;
@@ -140,12 +148,13 @@
 
         .suggested__description--two{
             float: right;
-            width: 42%;
+            width: 36%;
+            margin-left: 15px;
             margin-right: 25px;
             margin-top: 15px;
             color: #666666;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 19px;
+            font-size: 18px;
             line-height: 35px;
             padding: 0;
         }
@@ -172,9 +181,9 @@
             color: #000000
         }
         .help{
-            padding-left: 30px;
+            padding-left: 3%;
             float: left;
-            width: 250px;
+            width: 45%;
             height: 60px;
         }
         .help__img{
@@ -262,6 +271,84 @@
             color: #999999;
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        @media screen and (max-width: 480px) {
+            .suggested {
+                width: 100% !important;
+                margin: 0 auto;
+                text-align: center;
+                display: table;
+            }
+            .suggested__img {
+                float: left;
+                display: block;
+                margin-left: 25px;
+                width: 91.5% !important;
+                height: 70%;
+                margin: 0 auto;
+                margin-left: 25px;
+                margin-right: 25px;
+                margin-top: 15px;
+            }
+            .suggested__title {
+                width: 100% !important;
+                text-align: center;
+                float: right;
+                clear: both;
+                font-size: 24px;
+                margin-top: 15px;
+            }
+            .suggested__description {
+                width: 88% !important;
+                clear: both;
+                margin-left: 15px;
+                padding-left: 15px;
+                text-align: center;
+                display: table;
+            }
+
+            .suggested__img--two{
+                float: right;
+                display: block;
+                margin-left: 25px;
+                width: 91.5% !important;
+                margin: 0 auto;
+                margin-left: 25px;
+                margin-right: 25px;
+                height: 70%;
+            }
+
+            .suggested__title--two{
+                width: 100% !important;
+                text-align: center;
+                float: right;
+                clear: both;
+                font-size: 24px;
+                margin-top: 15px;
+            }
+
+            .suggested__description--two{
+                width: 88% !important;
+                clear: both;
+                margin-right: 15px;
+                padding-right: 15px;
+                text-align: center;
+                display: table;
+            }
+
+            .column--help {
+                width: 100% !important;
+                max-width: 280px !important ;
+                margin: 0 auto;
+                text-align: center;
+                display: table;
+            }
+
+            .help{
+                width: 100% !important;
+                padding-left: 0 !important;
+            }
+        }
     </style>
     <table width="100%" align="center" cellpadding="0" cellspacing="0" border="1" bordercolor="#eaeaea" class="wrapper" style="width:100%;max-width:600px;margin:0 auto;">
         <tbody>
@@ -299,7 +386,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                <table height="auto" style="width:550px;margin-left: 25px; margin-top: 15px;" cellpadding="0" cellspacing="0" border="0" class="block" bgcolor="#ffffff">
+                                <table height="auto" style="width:600px; margin-top: 15px;" cellpadding="0" cellspacing="0" border="0" class="block">
                                     <tbody>
                                         <tr>
                                             <td height="30px" width="100%">
@@ -366,7 +453,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <table height="auto" style="width:550px;margin-left: 25px;" cellpadding="0" cellspacing="0" border="0" class="block" bgcolor="#ffffff">
+                                <table height="auto" style="width:600px;" cellpadding="0" cellspacing="0" border="0" class="block">
                                     <tbody>
                                         <tr>
                                             <td height="30px" width="100%">
@@ -381,7 +468,7 @@
                                             <td height="30px" width="100%">
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="suggested">
                                             <td>
                                                 <img class="suggested__img" src="https://picua.org/images/2019/04/09/b4e0194a232960aea4975b8b9045a5f1.jpg" alt="man" width="50%">
                                                 <p width="100%" class="suggested__title"> {tutor_firstname}</p>
@@ -392,7 +479,7 @@
                                             <td height="30px" width="100%">
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="suggested">
                                             <td>
                                                 <img class="suggested__img--two" src="https://picua.org/images/2019/04/09/b4e0194a232960aea4975b8b9045a5f1.jpg" alt="man" width="50%">
                                                 <p width="100%" class="suggested__title--two"> {tutor_firstname}</p>
@@ -405,7 +492,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <table height="auto" style="width:550px;margin-left: 25px;" cellpadding="0" cellspacing="0" border="0" class="block" bgcolor="#ffffff">
+                                <table height="auto" style="width:600px;" cellpadding="0" cellspacing="0" border="0" class="block" >
                                     <tbody>
                                         <tr>
                                             <td height="30px" width="100%">
@@ -421,8 +508,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <img width="100%" src="https://picua.org/images/2019/04/09/ccb735ef0cbd223c60b8c9065c70e8f6.jpg" alt="">
+                                            <td style="width:100%;max-width:550px;margin:0 auto; text-align: center">
+                                                <img width="100%" style="width:100%;max-width:550px;margin:0 auto; text-align: center" src="https://picua.org/images/2019/04/09/ccb735ef0cbd223c60b8c9065c70e8f6.jpg" alt="search">
                                             </td>
                                         </tr>
                                         <tr>
@@ -459,7 +546,7 @@
                             <td height="5px" width="100%">
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="column--help">
                             <td class="help" valign="center" align="center">
                                 <a href="#">
                                     <img class="help__img" src="https://picua.org/images/2019/04/09/cec48709f2e22d0d88add0da31c1cf08.png" alt="" width="40px" height="40px">
@@ -480,9 +567,9 @@
                         </tr>
                         <tr>
                             <td width="100%" align="center" class="smile">
-                                <img class="smile__img" src="https://image.flaticon.com/icons/svg/42/42829.svg" alt="" width="50px" height="50px">
-                                <img class="smile__img--two" src="https://image.flaticon.com/icons/svg/42/42891.svg" alt="" width="50px" height="50px">
-                                <img class="smile__img" src="https://image.flaticon.com/icons/svg/42/42862.svg" alt="" width="50px" height="50px">
+                                <img class="smile__img" src="https://picua.org/images/2019/04/10/3ca0f4e50d11b410d381453f3d576ff8.png" alt="smile" >
+                                <img class="smile__img--two" src="https://picua.org/images/2019/04/10/fbacb530aceff48c456f707c2e546a9a.png" alt="smile">
+                                <img class="smile__img" src="https://picua.org/images/2019/04/10/5fbfbef045fb1b3c6fb8f36a751db527.png" alt="smile" >
                             </td>
                         </tr>
                         <tr>
@@ -500,16 +587,16 @@
                         <tr width="100%" align="center">
                             <td align="center" class="social" width="100%">
                                 <a href="https://twitter.com/preplycom" class="social__link">
-                                    <i class="fab fa-twitter"></i>
+                                    <img src="https://picua.org/images/2019/04/10/825925f05206f755d71f97fdd65f1348.png" alt="twitter" width="25px" height="25px">
                                 </a>
                                 <a href="https://www.instagram.com/preplycom/" class="social__link--two">
-                                    <i class="fab fa-instagram"></i>
+                                    <img src="https://picua.org/images/2019/04/10/1d10047e7ffc22b3bc888f656f569948.png" alt="instagram" width="25px" height="25px">
                                 </a>
                                 <a href="https://www.facebook.com/preplycompany/" class="social__link--three">
-                                   <i class="fab fa-facebook-f"></i>
+                                   <img src="https://picua.org/images/2019/04/10/9e8c39c94c22f21243240b5d8757052b.png" alt="facebook" width="25px" height="25px">
                                 </a>
                                 <a href="https://www.youtube.com/user/preplysite/featured" class="social__link">
-                                    <i class="fab fa-youtube"></i>
+                                    <img src="https://picua.org/images/2019/04/10/2e881d04e1b023c2079c52f1e3b503d1.png" alt="youtube" width="25px" height="25px">
                                 </a>
                             </td>
                         </tr>
