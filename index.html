@@ -12,8 +12,9 @@
         .block {
             background-image: url("https://picua.org/images/2019/04/09/4ebb0713a50f7e28db4712366ad849fb.png");
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: 100% 100%;
             margin-bottom: 30px;
+            width: 100%;
         }
         .title{
             color: #3db3bd;
@@ -272,7 +273,24 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 600px) {
+            .wrapper{
+                max-width: 420xpx !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+
+            .container{
+                max-width: 600px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+
+
+            .block{
+                max-width: 600px !important;
+                width: 100% !important;;
+            }
             .suggested {
                 width: 100% !important;
                 margin: 0 auto;
@@ -286,7 +304,7 @@
                 width: 91.5% !important;
                 height: 70%;
                 margin: 0 auto;
-                margin-left: 25px;
+                margin-left: 18px;
                 margin-right: 25px;
                 margin-top: 15px;
             }
@@ -314,7 +332,7 @@
                 width: 91.5% !important;
                 margin: 0 auto;
                 margin-left: 25px;
-                margin-right: 25px;
+                margin-right: 18px;
                 height: 70%;
             }
 
@@ -348,12 +366,41 @@
                 width: 100% !important;
                 padding-left: 0 !important;
             }
+
+            .item__text {
+                width: 180px !important;        
+                font-size: 16px !important;
+            }
+
+            .item__text--two {
+                width: 230px !important;
+                margin-left: 45px !important;
+                font-size: 18px !important;
+            }
+
+            .item__text--three {
+                width: 200px !important;
+                margin-left: 25px !important;
+                font-size: 18px !important;
+            }
+
+            .search{
+                width: 92% !important;
+                margin: 0 auto;
+            }
+
+            .search__img{
+                width: 92% !important; 
+                margin: 0 auto;
+            }
+
+
         }
     </style>
     <table width="100%" align="center" cellpadding="0" cellspacing="0" border="1" bordercolor="#eaeaea" class="wrapper" style="width:100%;max-width:600px;margin:0 auto;">
         <tbody>
             <tr>
-                <td>
+                <td class="container">
                 <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
                     <tbody>
                         <tr>
@@ -376,7 +423,7 @@
                     <tbody>
                         <tr>
                             <td class="logo" align="center" width="100%">
-                                <img width="600px" src="https://picua.org/images/2019/04/09/3cff6f54feeabd18924b0f6896d96b68.jpg" alt="main"
+                                <img style="width:100%;max-width:600px;margin:0 auto;" src="https://picua.org/images/2019/04/09/3cff6f54feeabd18924b0f6896d96b68.jpg" alt="main"
                                 />
                             </td>
                         </tr>
@@ -385,7 +432,7 @@
                 <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#fafafa">
                     <tbody>
                         <tr>
-                            <td>
+                            <td class="container">
                                 <table height="auto" style="width:600px; margin-top: 15px;" cellpadding="0" cellspacing="0" border="0" class="block">
                                     <tbody>
                                         <tr>
@@ -508,8 +555,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="width:100%;max-width:550px;margin:0 auto; text-align: center">
-                                                <img width="100%" style="width:100%;max-width:550px;margin:0 auto; text-align: center" src="https://picua.org/images/2019/04/09/ccb735ef0cbd223c60b8c9065c70e8f6.jpg" alt="search">
+                                            <td class="search" style="width:100%;max-width:550px;margin:0 auto; text-align: center">
+                                                <img class="search__img" width="100%" style="width:100%;max-width:550px;margin:0 auto; text-align: center" src="https://picua.org/images/2019/04/09/ccb735ef0cbd223c60b8c9065c70e8f6.jpg" alt="search">
                                             </td>
                                         </tr>
                                         <tr>
